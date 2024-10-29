@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_xxsmall">2dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">26dp</dimen>
+    <dimen name="avatar_size_medium">72dp</dimen>
+    <dimen name="avatar_size_large">96dp</dimen>
+    <dimen name="user_list_item_start_indent">88dp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_28">28dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_44">44dp</dimen>
+    <dimen name="size_48">48dp</dimen>
+    <dimen name="size_56">56dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_64">64dp</dimen>
+    <dimen name="size_75">75dp</dimen>
+    <dimen name="size_80">80dp</dimen>
+    <dimen name="size_92">92dp</dimen>
+    <dimen name="size_128">128dp</dimen>
+    <dimen name="size_200">200dp</dimen>
+</resources>

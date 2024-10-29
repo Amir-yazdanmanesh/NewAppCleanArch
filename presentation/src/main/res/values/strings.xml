@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="errorTitle">Oh no!</string>
+    <string name="networkErrorDescription">An error occurred. Check your connection or try again</string>
+    <string name="errorRetryButtonText">Try again</string>
+    <string name="strFetchingDataFromServer">Fetching data from server</string>
+    <string name="strRetry">Retry</string>
+    <string name="newsDetails">News Details</string>
+    <string name="back">back</string>
+    <string name="unknown">"Unknown"</string>
+    <string name="article_image">Article Image</string>
+    <string name="image_not_available">Image not available</string>
+    <string name="i_m_gone_find_me">I\'m Gone, Find me</string>
+    <string name="oh_am_i_still_visible">Oh, am I still visible?</string>
+    <string name="don_t_touch_me">Don\'t Touch Me!</string>
+    <string name="error">Error!</string>
+    <string name="articles_added">%1$d article(s) added</string>
+
+</resources>

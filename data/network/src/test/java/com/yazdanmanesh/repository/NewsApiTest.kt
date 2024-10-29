@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 
-class GithubApiTest {
+class NewsApiTest {
 
     private val mockWebService = MockWebServer()
     private val num = 3

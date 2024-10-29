@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": {
+        "id": "source1",
+        "name": "Fake Source 1"
+      },
+      "author": "Author 1",
+      "title": "Fake Title 1",
+      "description": "This is a fake description for article 1",
+      "url": "https://example.com/article1",
+      "urlToImage": "https://example.com/image1.jpg",
+      "publishedAt": "2024-10-26T16:36:00Z",
+      "content": "This is the fake content for article 1. It is long and detailed."
+    },
+    {
+      "source": {
+        "id": "source2",
+        "name": "Fake Source 2"
+      },
+      "author": "Author 2",
+      "title": "Fake Title 2",
+      "description": "This is a fake description for article 2",
+      "url": "https://example.com/article2",
+      "urlToImage": "https://example.com/image2.jpg",
+      "publishedAt": "2024-10-26T16:36:00Z",
+      "content": "This is the fake content for article 2. It is long and detailed."
+    },
+    {
+      "source": {
+        "id": "source3",
+        "name": "Fake Source 3"
+      },
+      "author": "Author 3",
+      "title": "Fake Title 3",
+      "description": "This is a fake description for article 3",
+      "url": "https://example.com/article3",
+      "urlToImage": "https://example.com/image3.jpg",
+      "publishedAt": "2024-10-26T16:36:00Z",
+      "content": "This is the fake content for article 3. It is long and detailed."
+    }
+  ]
+}

@@ -48,6 +48,3 @@ The app follows the MVI architectural pattern, separating concerns into distinct
 3. **Effect** - One-off events like navigation actions, displaying a SnackBar, or showing a Toast.
 
 These components work together to implement a clear, unidirectional data flow. The ViewModel mediates between the view and model, ensuring separation of concerns and predictable behavior.
-
-## Acknowledgments
-Thanks to the SnapBox team for providing the opportunity to work on this code challenge and for their valuable feedback throughout the process.

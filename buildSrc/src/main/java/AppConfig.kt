@@ -9,8 +9,8 @@ object AppConfig {
     const val versionName = "1.0.0"
     const val androidTestInstrumentation = "androidx.test.runner.AndroidJUnitRunner"
 
-    val javaJvmTarget = JavaVersion.VERSION_17.toString()
-    val javaCompatibility = JavaVersion.VERSION_17
+    val javaJvmTarget = JavaVersion.VERSION_21.toString()
+    val javaCompatibility = JavaVersion.VERSION_21
 
     object NameSpace {
         const val data = "com.example.data"

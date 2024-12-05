@@ -24,7 +24,7 @@ This is a modern sample project that demonstrates how to build scalable and main
     * MVI (Model-View-Intent) architecture for unidirectional data flow and clear separation of concerns.
     * Android Architecture Components ([ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)) to handle state and lifecycle-aware components.
     * [KTX Extensions](https://developer.android.com/kotlin/ktx) for simplified Kotlin code in Jetpack.
-
+  
 * **Caching**
     * Integrated **Room** database for offline-first functionality and persistent data storage.
     * Fetches and caches data locally from the Room database, reducing unnecessary network calls.

@@ -19,3 +19,4 @@ tasks {
         delete(rootProject.buildDir)
     }
 }
+tasks.register("testClasses")

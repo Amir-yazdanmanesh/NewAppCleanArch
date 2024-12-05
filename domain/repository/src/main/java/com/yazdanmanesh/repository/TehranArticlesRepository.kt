@@ -6,5 +6,4 @@ import kotlinx.coroutines.flow.Flow
 
 interface TehranArticlesRepository {
     fun getTehranArticles(): Result<Flow<PagingData<Article>>>
-    fun notifyNewArticles(): Flow<Int>
 }

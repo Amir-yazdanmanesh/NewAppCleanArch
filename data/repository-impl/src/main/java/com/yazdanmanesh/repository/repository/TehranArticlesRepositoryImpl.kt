@@ -24,8 +24,6 @@ import javax.inject.Inject
 class TehranArticlesRepositoryImpl @Inject constructor(
     private val articleDao: TehranArticlesDao,
     private val remoteMediator: TehranArticlesRemoteMediator,
-    private val articlesApi: NewsApi,
-    private val remoteKeysDao: RemoteKeysDao,
     private val mapper: ArticleMapper,
 ) : TehranArticlesRepository {
     @OptIn(ExperimentalPagingApi::class)
@@ -41,45 +39,5 @@ class TehranArticlesRepositoryImpl @Inject constructor(
                 pagingData.map { mapper.articleEntityToDomain(it) }
             }
         }
-    }
-
-    private val hashedLocalData = mutableSetOf<Int>()
-
-    override fun notifyNewArticles(): Flow<Int> = flow {
-        hashedLocalData.clear()
-        hashedLocalData.addAll(
-            mapper.listArticleEntityToDto(articleDao.getTehranArticles())
-                .asSequence()
-                .map { it.hashCode() }
-        )
-
-        while (true) {
-            delay(FETCH_REFRESH_TIME_TIME_MILLISECONDS)
-            val newArticleCount = countNewArticles()
-            if (newArticleCount > 0) {
-                emit(newArticleCount)
-            }
-        }
-    }.catch {
-        emit(-1)
-    }
-
-    private suspend fun countNewArticles(): Int {
-        var newArticleCount = 0
-        val lastPage = remoteKeysDao.getLastRemoteKey()?.nextPage ?: 1
-
-        for (page in 1 until lastPage) {
-            val articles =
-                articlesApi.getTehranArticles(page = page, num = MAX_PAGING_SIZE).articles
-
-            articles.forEach { article ->
-                if (!hashedLocalData.contains(article.hashCode())) {
-                    hashedLocalData.add(article.hashCode())
-                    newArticleCount++
-                }
-            }
-            delay(50) // Throttling API requests
-        }
-        return newArticleCount
     }
 }
